@@ -18,7 +18,7 @@ import org.junit.Test;
 public class MysteryMathTest {
     @Test
     public void testFour() {
-        assertEquals(4, MysteryMath.four());
+        assertEquals(2, MysteryMath.four());
         assertNotEquals(3, MysteryMath.four());
         assertNotEquals(5, MysteryMath.four());
     }
