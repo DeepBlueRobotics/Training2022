@@ -5,7 +5,7 @@
 /* the project.                                                               */
 /*----------------------------------------------------------------------------*/
 
-package org.team199.lib;
+package org.team199.lib.BasicJava;
 
 public class MysteryMath2 {
     /**
