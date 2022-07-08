@@ -21,8 +21,4 @@ public class Distance {
      *  2. After testing that the code pasts the tests, create SmartDashboard keys to serve as input and print the
      *  output on SmartDashboard
      */
-    public static double dist(double heightGoal, double heightRobot, double mountAngle, double targetAngle)
-    {
-        return 0;
-    }
 }
