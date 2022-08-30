@@ -10,7 +10,8 @@ package org.team199.testrobot;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-
+import com.ctre.phoenix.motorcontrol.can;
+import edu.wpi.first.wpilibj;
 /**
  * The VM is configured to automatically run this class, and to call the
  * functions corresponding to each mode, as described in the TimedRobot
@@ -67,7 +68,7 @@ public class Robot extends TimedRobot {
   public void autonomousInit() {
     m_autoSelected = m_chooser.getSelected();
     // m_autoSelected = SmartDashboard.getString("Auto Selector", kDefaultAuto);
-    System.out.println("Auto selected: " + m_autoSelected);
+    System.out.println("Peepeee selected: " + m_autoSelected);
   }
 
   /**
@@ -91,6 +92,7 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void teleopPeriodic() {
+    System.out.println("STAWP RUNNING THIS IDIOT (TELEOPPERIODIC)");
   }
 
   /**
@@ -98,5 +100,6 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void testPeriodic() {
+    System.out.println("STAWP RUNNING THIS IDIOT (TESTPERIODIC)");
   }
 }
