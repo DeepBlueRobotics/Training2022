@@ -25,7 +25,7 @@ public class Robot extends TimedRobot {
   private String m_autoSelected;
   private final SendableChooser<String> m_chooser = new SendableChooser<>();
 
-  private WPI_TalonSRX​ csm = new WPI_TalonSRX​(500);
+  private WPI_TalonSRX​ csm = new WPI_TalonSRX​(1);
   private Joystick pleasureStick = new Joystick(0);
 
   /**
