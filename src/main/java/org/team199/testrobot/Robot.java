@@ -28,6 +28,7 @@ public class Robot extends TimedRobot {
 
   private WPI_TalonSRX​ csm = new WPI_TalonSRX​(1);
   private Joystick pleasureStick = new Joystick(0);
+  private double speed=0;
 
   /**
    * This function is run when the robot is first started up and should be
@@ -50,7 +51,12 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void robotPeriodic() {
-    csm.set(pleasureStick.getY());
+    speed+=pleasureStick.getY();
+    speed*=.9;
+    if (speed>1){
+      speed=1;
+    }
+    csm.set(speed);
   }
 
   /**
