@@ -52,7 +52,7 @@ public class Robot extends TimedRobot {
   @Override
   public void robotPeriodic() {
     speed+=pleasureStick.getY();
-    speed*=.8;
+    speed*=.99;
     if (speed>1){
       speed=1;
     }
